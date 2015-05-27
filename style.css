@@ -1,0 +1,112 @@
+ *                               { margin: 0; padding: 0; }
+body {
+	font: 12px "Lucida Grande", Sans-Serif;
+	margin: 0;
+	padding: 0;
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+.floor {
+	margin: 0;
+	padding: 0;
+  position:absolute;
+  width:2000px;
+}
+
+.roomImage {
+	vertical-align: top;
+	height: 100%;
+	cursor: hand;
+}
+
+.av {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+	border:0px #FFF solid;
+  z-index:10;
+  width:300px;
+  pointer-events:none;
+  background: url('transparent.png');
+  display:block;
+  cursor: hand;
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+.avIcon {
+  //cursor:default;
+  width:auto;
+  //height:5%;
+  pointer-events: auto;
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+.fastEase {
+	-webkit-transition: all 0.4s ease; //0.4s
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.noEase {
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: color 0 ease-in;
+	-ms-transition: none;
+	transition: none;
+}
+
+.signIn {
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	opacity:0.8;
+	z-index:999999;
+	background-image:url('sign-in-with-twitter.png');
+	background-repeat:repeat;
+}
+
+.flip-horizontal {
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	/* -o-transform: scaleX(-1); */
+	-o-transform: scale(-1,0);
+	transform: scaleX(-1);
+	filter: fliph; /*IE*/
+	cursor: hand;
+
+	margin-left: 0px;
+	padding: 0px;
+}
+
+.flip-vertical {
+	-moz-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	/* -o-transform: scaleY(-1); */
+	-o-transform: scale(0,-1);
+	transform: scaleY(-1);
+	filter: flipv; /*IE*/
+	cursor: hand;
+}
+
+#sendie {
+	border: 1px solid #999;
+	width: 360px;
+	padding: 10px;
+	font: 12px "Lucida Grande", Sans-Serif; float: right;
+} 
+
